@@ -6,16 +6,13 @@
 /*   By: bkrueger <bkrueger@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 21:02:06 by bkrueger          #+#    #+#             */
-/*   Updated: 2023/09/05 21:22:12 by bkrueger         ###   ########.fr       */
+/*   Updated: 2023/09/08 20:40:36 by bkrueger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_print_numbers(void)
 {
