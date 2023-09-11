@@ -6,7 +6,7 @@
 /*   By: bkrueger <bkrueger@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/11 23:51:49 by bkrueger          #+#    #+#             */
-/*   Updated: 2023/09/12 00:46:38 by bkrueger         ###   ########.fr       */
+/*   Updated: 2023/09/12 01:03:52 by bkrueger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	ft_putstr(char *str)
 		i ++;
 	}
 }
+
 int	main(int argc, char *argv[])
 {
 	int	i;
