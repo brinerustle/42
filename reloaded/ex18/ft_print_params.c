@@ -1,34 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_len.c                                       :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkrueger <bkrueger@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/11 22:12:31 by bkrueger          #+#    #+#             */
-/*   Updated: 2023/09/11 22:59:38 by bkrueger         ###   ########.fr       */
+/*   Created: 2023/09/11 23:51:49 by bkrueger          #+#    #+#             */
+/*   Updated: 2023/09/12 00:46:38 by bkrueger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
 
-int	ft_strlen(char *str)
+void	ft_putchar(char c);
+
+void	ft_putstr(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
+		ft_putchar(str[i]);
 		i ++;
 	}
-	return (i);
 }
-/*
-int	main(void)
+int	main(int argc, char *argv[])
 {
-	char	*c;
+	int	i;
 
-	c = "abcdefghijklmnopqrstuvwxyz";
-	printf("the string \"%s\" is %d characters long.\n", c, ft_strlen(c));
+	i = 1;
+	while (i < argc)
+	{
+		ft_putstr(argv[i]);
+		ft_putchar('\n');
+		i ++;
+	}
 	return (0);
-}*/
+}
